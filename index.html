@@ -31,231 +31,259 @@
  
 <body class="nk-body body-wider bg-theme">
 	<div class="nk-wrap" style="z-index:99">
+        <nav data-nav id="navigation">
+            <a href="#header">Главная</a>
+            <a href="#about">О компании</a>
+            <a href="#products">Наши продукты</a>
+            <a href="#why">Почему мы</a>
+            <a href="#contacts">Наши контакты</a>
+        </nav>
 		<div id="particles-bg" class="particles-container is-fixed particles-bg op-20"></div>
-        <header>
-        <div class="wrap">
-            <div class="header__nav-trigger">
-                <div></div>
-                <div></div>
-                <div></div>
+        <header id="header">
+            <div class="wrap">
+                <div data-nav class="header__nav-trigger">
+                    <div data-nav></div>
+                    <div data-nav></div>
+                    <div data-nav></div>
+                </div>
+                <img src="imgs/Логотип.png" alt="" class="header__logo">
+                <div class="header__text">
+                    <h1 class="heading_l">
+                        PROKEYSERVICE
+                    </h1>
+                    <br>
+                    <p class="gold">Локальный дистрибьютор цифрового контента<br> мулитимедийных услуг и телекомуникации</p>
+                </div>
+                <img src="imgs/17.png" alt="" class="header_image">
             </div>
-            <div class="header__nav"></div>
-            <img src="imgs/Логотип.png" alt="" class="header__logo">
-            <div class="header__text">
-                <h1 class="heading_l">
-                    PROKEYSERVICE
-                </h1>
-                <br>
-                <p class="gold">Локальный дистрибьютор цифрового контента<br> мулитимедийных услуг и телекомуникации</p>
-            </div>
-            <img src="imgs/17.png" alt="" class="header_image">
-        </div>
-    </header>
-    <article class="about">
-        <div class="wrap">
-            <img src="imgs/16.png" alt="">
-            <div class="about__text">
-                <h1 class="heading_l gold">
-                    PROKEYSERVICE
-                </h1>
-                <br>
-                <p class="big">Локальный дистрибьютор цифрового контента -<br>
-                    офисные приложения антирирасы. <br>
-                    Онлайн музыка и многое другое <br>
-                    Лидипвция компании на територии <br>
-                    Онлайн музыка и многое другое <br>
-                    Лидипвция компании <br>
-                </p>
-            </div>
-        </div>
-    </article>
-    <article class="products">
-        <div class="wrap">
-            <h2 class="heading_m red">
-                НАШИ ПРОДУКТЫ
-            </h2>
-            <div class="products__card-box">
-                <div class="products__card">
-                    <img src="imgs/Мультимедиа символ продукты.png" alt="">
-                    <div>
-                        <h2 class="heading_m">Мультимедиа</h2>
-                        <ul>
-                            <li>- онлайн музыка</li>
-                            <li>- онлайн телевидение</li>
-                            <li>- онлайн кинотеатры</li>
-                            <li>и многое другое…</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="products__card">
-                    <img src="imgs/ПО символ продукты.png" alt="">
-                    <div>
-                        <h2 class="heading_m">Программное обеспечение</h2>
-                        <ul>
-                            <li>- офисные приложения</li>
-                            <li>- облачные хранилища для Вашего смартфона</li>
-                            <li>- видеоредакторы</li>
-                            <li>- графические редакторы</li>
-                            <li>- операционные системы</li>
-                            <li>- программные обеспечения для 3D-моделирования, </li>
-                            <li>- анимации и визуализации</li>
-                            <li>и многое другое…</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="products__card">
-                    <img src="imgs/Безопастность символ продукты.png" alt="">
-                    <div>
-                        <h2 class="heading_m">Безопастность</h2>
-                        <ul>
-                            <li>- мобильные сейфы для хранения важных документов</li>
-                            <li>-антивирусы</li>
-                            <li>-блокировщики рекламы</li>
-                            <li>и многое другое…</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="products__card">
-                    <img src="imgs/Игры символ продукты.png" alt="">
-                    <div>
-                        <h2 class="heading_m">Игры</h2>
-                        <ul>
-                            <li>- мобильные игрыа</li>
-                            <li>- игры для приставок и кансолей</li>
-                            <li>- игры для PC</li>
-                            <li>и многое другое…</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="products__card">
-                    <img src="imgs/Самообразование символ продукты.png" alt="">
-                    <div>
-                        <h2 class="heading_m">Самообразование</h2>
-                        <ul>
-                            <li>- online курсы английского языка</li>
-                            <li>- электронные книги</li>
-                            <li>- аудиокниги</li>
-                            <li>и многое другое…</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="products__card">
-                    <img src="imgs/Страхование символ продукты.png" alt="">
-                    <div>
-                        <h2 class="heading_m">Страховки</h2>
-                        <ul>
-                            <li>coming soon</li>
-                        </ul>
-                    </div>
+        </header>
+        <article class="about" id="about">
+            <div class="wrap">
+                <img src="imgs/16.png" alt="">
+                <div class="about__text">
+                    <h1 class="heading_l gold">
+                        PROKEYSERVICE
+                    </h1>
+                    <br>
+                    <p class="big">Локальный дистрибьютор цифрового контента -<br>
+                        офисные приложения антирирасы. <br>
+                        Онлайн музыка и многое другое <br>
+                        Лидипвция компании на територии <br>
+                        Онлайн музыка и многое другое <br>
+                        Лидипвция компании <br>
+                    </p>
                 </div>
             </div>
-        </div>
-    </article>
-    <article class="why">
-        <div class="wrap clearfix">
-            <img src="imgs/19.png" alt="">
-            <img src="imgs/27.png" alt="">
-            <h2 class="heading_m red">
-                НАШИ ПРОДУКТЫ
-            </h2>
-            <p>Наша компания зарекомендовала себя как лучший поставщик мультимедийных услуг на рынке Казахстана.</p>
-            <ul>
-                <li><img src="imgs/Символ для Почему мы.png" alt=""><span>индивидуальный подход к каждому партнеру</span></li>
-                <li><img src="imgs/Символ для Почему мы.png" alt=""><span>система скидок</span></li>
-                <li><img src="imgs/Символ для Почему мы.png" alt=""><span>высокий уровень обслуживания</span></li>
-                <li><img src="imgs/Символ для Почему мы.png" alt=""><span>внутренний контроль качества: мы не закупаем и не предлагаем второсортную продукцию</span></li>
-                <li><img src="imgs/Символ для Почему мы.png" alt=""><span>гарантийные сроки и развитое постпродажное обслуживание</span></li>
-            </ul>
-        </div>
-    </article>
-    <footer>
-        <div class="be-partner clearfix">
-            <h2 class="heading_m gold">
-                Стать партнером
-            </h2>
-            <form action="https://demo.themenio.com/ico/form/contact.php" method="post" novalidate="novalidate">
-                <label>
-                    ИМЯ: <br>
-                    <input name="contact-name" placeholder="Введите ваше имя" type="text" aria-required="true">
-                </label>
-                <br>
-                <label>
-                    ТЕЛЕФОН: <br>
-                    <input name="contact-email" placeholder="Введите ваш номер телефона" type="email" aria-required="true">
-                </label>
-                <br>
-                <label>
-                    ПОЧТА: <br>
-                    <input name="contact-email" placeholder="Введите вашу почту" type="email" aria-required="true">
-                </label>
-                <br>
-                <label>
-                    Сообщение: <br>
-                     <textarea name="contact-message" placeholder="Введите Cообщение" aria-required="true"></textarea>
-                </label>
-                <br>
-                <button type="submit">Отправить</button>
-                <!-- <div class="row">
-                    <div class="col-sm-6">
-                        <div class="field-item animated fadeInUp" data-animate="fadeInUp" data-delay="0.8" style="visibility: visible; animation-delay: 0.8s;">
-                            <label class="field-label ttu">Имя</label>
-                            <div class="field-wrap">
-                                <input name="contact-name" placeholder="Введите ваше имя" type="text" class="input-bordered required" aria-required="true">
+        </article>
+        <article class="products" id="products">
+            <div class="wrap">
+                <h2 class="heading_m red">
+                    НАШИ ПРОДУКТЫ
+                </h2>
+                <div class="products__card-box">
+                    <div class="products__card">
+                        <img src="imgs/Мультимедиа символ продукты.png" alt="">
+                        <div>
+                            <h2 class="heading_m">Мультимедиа</h2>
+                            <ul>
+                                <li>- онлайн музыка</li>
+                                <li>- онлайн телевидение</li>
+                                <li>- онлайн кинотеатры</li>
+                                <li>и многое другое…</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="products__card">
+                        <img src="imgs/ПО символ продукты.png" alt="">
+                        <div>
+                            <h2 class="heading_m">Программное обеспечение</h2>
+                            <ul>
+                                <li>- офисные приложения</li>
+                                <li>- облачные хранилища для Вашего смартфона</li>
+                                <li>- видеоредакторы</li>
+                                <li>- графические редакторы</li>
+                                <li>- операционные системы</li>
+                                <li>- программные обеспечения для 3D-моделирования, </li>
+                                <li>- анимации и визуализации</li>
+                                <li>и многое другое…</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="products__card">
+                        <img src="imgs/Безопастность символ продукты.png" alt="">
+                        <div>
+                            <h2 class="heading_m">Безопастность</h2>
+                            <ul>
+                                <li>- мобильные сейфы для хранения важных документов</li>
+                                <li>-антивирусы</li>
+                                <li>-блокировщики рекламы</li>
+                                <li>и многое другое…</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="products__card">
+                        <img src="imgs/Игры символ продукты.png" alt="">
+                        <div>
+                            <h2 class="heading_m">Игры</h2>
+                            <ul>
+                                <li>- мобильные игрыа</li>
+                                <li>- игры для приставок и кансолей</li>
+                                <li>- игры для PC</li>
+                                <li>и многое другое…</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="products__card">
+                        <img src="imgs/Самообразование символ продукты.png" alt="">
+                        <div>
+                            <h2 class="heading_m">Самообразование</h2>
+                            <ul>
+                                <li>- online курсы английского языка</li>
+                                <li>- электронные книги</li>
+                                <li>- аудиокниги</li>
+                                <li>и многое другое…</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="products__card">
+                        <img src="imgs/Страхование символ продукты.png" alt="">
+                        <div>
+                            <h2 class="heading_m">Страховки</h2>
+                            <ul>
+                                <li>coming soon</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="why" id="why">
+            <div class="wrap clearfix">
+                <img src="imgs/19.png" alt="">
+                <img src="imgs/27.png" alt="">
+                <h2 class="heading_m red">
+                    НАШИ ПРОДУКТЫ
+                </h2>
+                <p>Наша компания зарекомендовала себя как лучший поставщик мультимедийных услуг на рынке Казахстана.</p>
+                <ul>
+                    <li><img src="imgs/Символ для Почему мы.png" alt=""><span>индивидуальный подход к каждому партнеру</span></li>
+                    <li><img src="imgs/Символ для Почему мы.png" alt=""><span>система скидок</span></li>
+                    <li><img src="imgs/Символ для Почему мы.png" alt=""><span>высокий уровень обслуживания</span></li>
+                    <li><img src="imgs/Символ для Почему мы.png" alt=""><span>внутренний контроль качества: мы не закупаем и не предлагаем второсортную продукцию</span></li>
+                    <li><img src="imgs/Символ для Почему мы.png" alt=""><span>гарантийные сроки и развитое постпродажное обслуживание</span></li>
+                </ul>
+            </div>
+        </article>
+        <footer>
+            <div class="be-partner clearfix">
+                <h2 class="heading_m gold">
+                    Стать партнером
+                </h2>
+                <form action="https://demo.themenio.com/ico/form/contact.php" method="post" novalidate="novalidate">
+                    <label>
+                        ИМЯ: <br>
+                        <input name="contact-name" placeholder="Введите ваше имя" type="text" aria-required="true">
+                    </label>
+                    <br>
+                    <label>
+                        ТЕЛЕФОН: <br>
+                        <input name="contact-email" placeholder="Введите ваш номер телефона" type="email" aria-required="true">
+                    </label>
+                    <br>
+                    <label>
+                        ПОЧТА: <br>
+                        <input name="contact-email" placeholder="Введите вашу почту" type="email" aria-required="true">
+                    </label>
+                    <br>
+                    <label>
+                        Сообщение: <br>
+                         <textarea name="contact-message" placeholder="Введите Cообщение" aria-required="true"></textarea>
+                    </label>
+                    <br>
+                    <button type="submit">Отправить</button>
+                    <!-- <div class="row">
+                        <div class="col-sm-6">
+                            <div class="field-item animated fadeInUp" data-animate="fadeInUp" data-delay="0.8" style="visibility: visible; animation-delay: 0.8s;">
+                                <label class="field-label ttu">Имя</label>
+                                <div class="field-wrap">
+                                    <input name="contact-name" placeholder="Введите ваше имя" type="text" class="input-bordered required" aria-required="true">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="field-item animated fadeInUp" data-animate="fadeInUp" data-delay="0.9" style="visibility: visible; animation-delay: 0.9s;">
+                                <label class="field-label ttu">Телефон</label>
+                                <div class="field-wrap">
+                                    <input name="contact-email" placeholder="Введите ваш номер телефона" type="email" class="input-bordered required email" aria-required="true">
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="field-item animated fadeInUp" data-animate="fadeInUp" data-delay="0.9" style="visibility: visible; animation-delay: 0.9s;">
-                            <label class="field-label ttu">Телефон</label>
-                            <div class="field-wrap">
-                                <input name="contact-email" placeholder="Введите ваш номер телефона" type="email" class="input-bordered required email" aria-required="true">
+                            <div class="field-item animated fadeInUp" data-animate="fadeInUp" data-delay="0.9" style="visibility: visible; animation-delay: 0.9s;">
+                                <label class="field-label ttu">Почта</label>
+                                <div class="field-wrap">
+                                    <input name="contact-email" placeholder="Введите вашу почту" type="email" class="input-bordered required email" aria-required="true">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                        <div class="field-item animated fadeInUp" data-animate="fadeInUp" data-delay="0.9" style="visibility: visible; animation-delay: 0.9s;">
-                            <label class="field-label ttu">Почта</label>
-                            <div class="field-wrap">
-                                <input name="contact-email" placeholder="Введите вашу почту" type="email" class="input-bordered required email" aria-required="true">
-                            </div>
+                    <div class="field-item animated fadeInUp" data-animate="fadeInUp" data-delay="1.0" style="visibility: visible; animation-delay: 1s;">
+                        <label class="field-label ttu">Сообщение</label>
+                        <div class="field-wrap">
+                            <textarea name="contact-message" placeholder="" class="input-bordered input-textarea required" aria-required="true"></textarea>
                         </div>
                     </div>
-                <div class="field-item animated fadeInUp" data-animate="fadeInUp" data-delay="1.0" style="visibility: visible; animation-delay: 1s;">
-                    <label class="field-label ttu">Сообщение</label>
-                    <div class="field-wrap">
-                        <textarea name="contact-message" placeholder="" class="input-bordered input-textarea required" aria-required="true"></textarea>
-                    </div>
-                </div>
-                <input type="text" class="d-none" name="form-anti-honeypot" value="">
-                <div class="row">
-                    <div class="col-sm-5 text-right animated fadeInUp" data-animate="fadeInUp" data-delay="1.1" style="visibility: visible; animation-delay: 1.1s;">
-                        <button type="submit" class="btn btn-lg">Отправить</button>
-                    </div>
-                    <div class="col-sm-7 order-sm-first">
-                        <div class="form-results"></div>
-                    </div>
-                </div> -->
-            </form>
-        </div>
-        <div class="contacts">
-            <div class="circle">
-                <div><span><img src="imgs/Символ для контактов 1.png" alt=""></span>+7 747 597 17 77</div>
-                <div><span><img src="imgs/Символ для контактов 2.png" alt=""></span>azhanov@prokeyservice.kz</div>
-                <div><span><img src="imgs/Символ для контактов 3.png" alt=""></span>050000, г. Алматы</div>
+                    <input type="text" class="d-none" name="form-anti-honeypot" value="">
+                    <div class="row">
+                        <div class="col-sm-5 text-right animated fadeInUp" data-animate="fadeInUp" data-delay="1.1" style="visibility: visible; animation-delay: 1.1s;">
+                            <button type="submit" class="btn btn-lg">Отправить</button>
+                        </div>
+                        <div class="col-sm-7 order-sm-first">
+                            <div class="form-results"></div>
+                        </div>
+                    </div> -->
+                </form>
             </div>
-            <img src="imgs/21.png" alt="">
-        </div>
-    </footer>
+            <div class="contacts" id="contacts">
+                <div class="circle">
+                    <div><span><img src="imgs/Символ для контактов 1.png" alt=""></span>+7 747 597 17 77</div>
+                    <div><span><img src="imgs/Символ для контактов 2.png" alt=""></span>azhanov@prokeyservice.kz</div>
+                    <div><span><img src="imgs/Символ для контактов 3.png" alt=""></span>050000, г. Алматы</div>
+                </div>
+                <img src="imgs/21.png" alt="">
+            </div>
+        </footer>
 	
 	<!-- JavaScript -->
 	<script src="assets/js/jquery.bundle.js"></script>
 	<script src="assets/js/scripts.js"></script>
 	<script src="assets/js/charts.js"></script>
+    <script>
+        var navigation = document.querySelector("#navigation").style;
+        navigation.left = "calc(-40vw - 1px)";
+
+        document.querySelector(".header__nav-trigger").onclick = function(){
+            if(navigation.left == "0"){
+                navigation.left = "calc(-40vw - 1px)"
+                document.querySelector(".particles-container").style.opacity = "1";
+            }else{
+                navigation.left = "0";
+                document.querySelector(".particles-container").style.opacity = "0";
+            }
+        }
+
+        window.onclick = function(e){
+            console.log(e.srcElement.dataset.nav)
+            if(e.srcElement.dataset.nav == undefined){
+                navigation.left = "calc(-40vw - 1px)"
+                document.querySelector(".particles-container").style.opacity = "1";
+            }
+        }
+    </script>
 </body>
 </html>
