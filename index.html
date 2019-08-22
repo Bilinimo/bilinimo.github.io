@@ -32,11 +32,11 @@
 <body class="nk-body body-wider bg-theme">
 	<div class="nk-wrap" style="z-index:99">
         <nav data-nav id="navigation">
-            <a href="#header">Главная</a>
-            <a href="#about">О компании</a>
-            <a href="#products">Наши продукты</a>
-            <a href="#why">Почему мы</a>
-            <a href="#contacts">Наши контакты</a>
+            <a href="#header" onclick="scrollMenu('#header')">Главная</a>
+            <a href="#about" onclick="scrollMenu('#about')">О компании</a>
+            <a href="#products" onclick="scrollMenu('#products')">Наши продукты</a>
+            <a href="#why" onclick="scrollMenu('#why')">Почему мы</a>
+            <a href="#contacts" onclick="scrollMenu('#contacts')">Наши контакты</a>
         </nav>
 		<div id="particles-bg" class="particles-container is-fixed particles-bg op-20"></div>
         <header id="header">
@@ -52,7 +52,7 @@
                         PROKEYSERVICE
                     </h1>
                     <br>
-                    <p class="gold">Локальный дистрибьютор цифрового контента<br> мулитимедийных услуг и телекомуникации</p>
+                    <p class="gold">Локальный дистрибьютор цифрового контента мулитимедийных услуг и телекомуникации</p>
                 </div>
                 <img src="imgs/17.png" alt="" class="header_image">
             </div>
@@ -284,6 +284,36 @@
                 document.querySelector(".particles-container").style.opacity = "1";
             }
         }
+
+        let easeInOutCubic = (t) => { return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1 }
+
+        function anim(duration) {
+
+            var temp;
+
+            return function(sel) {
+
+                cancelAnimationFrame(temp);
+
+                var start = performance.now(),
+                    from = window.pageYOffset || document.documentElement.scrollTop,
+                    to = document.querySelector(sel).getBoundingClientRect().top;
+
+                requestAnimationFrame(function step(timestamp) {
+
+                    var progress = easeInOutCubic((timestamp - start) / duration);
+
+                    1 <= progress && (progress = 1);
+
+                    window.scrollTo(0, from + to * progress | 0);
+
+                    1 > progress && (temp = requestAnimationFrame(step))
+                })
+            }
+        };
+
+        var scrollMenu = anim(1500);
+
     </script>
 </body>
 </html>
